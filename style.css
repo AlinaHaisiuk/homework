@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: rgb(52, 84, 122);
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.text-container {
+  width: 540px;
+  margin: 0 auto;
+}
+
+.first-screen {
+  height: 700px;
+  background-color: #eeeff1;
+}
+
+.first-screen__navigation {
+  padding-top: 79px;
+}
+
+.first-screen__navigation ul {
+  display: flex;
+  gap: 45px;
+}
+
+.first-screen__navigation a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 480;
+}
+
+.first-screen__navigation a:hover {
+  color: var(--main-color);
+}
+
+.first-screen__title {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-top: 162px;
+  color: #000000;
+}
+.first-screen__description {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #727272;
+  padding-top: 60px;
+  line-height: 25px;
+}
+
+.container button {
+  background-color: var(--main-color);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200px;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  margin-top: 65px;
+}
+
+.about-me {
+  background-color: #ffffff;
+  height: 360px;
+}
+
+.about-me__title {
+  padding-top: 112px;
+  padding-bottom: 50px;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.about-me__description {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #727272;
+  text-align: center;
+  line-height: 25px;
+}
+
+.numbers {
+  height: 250px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+}
+
+.numbers ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers li {
+  display: flex;
+}
+
+.numbers img {
+  margin-right: 20px;
+}
+
+.numbers li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.number-paragraph {
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.number-paragraph {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.video {
+  background-color: #eeeff1;
+  height: 1004px;
+}
+
+.video__title {
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  padding-top: 100px;
+}
+.video__description {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: #727272;
+  text-align: center;
+  line-height: 25px;
+  padding-top: 50px;
+}
+.video-container img {
+  padding-top: 57px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.footer {
+  background-color: var(--main-color);
+  height: 151px;
+}
+
+.footer__title {
+  font-size: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 80px;
+  color: #ffffff;
+  padding-top: 50px;
+}
+.footer__description {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  padding-top: 20px;
+}
