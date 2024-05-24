@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      .container {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        margin-bottom: 20px;
+      }
+
+      .static {
+        background-color: lightblue;
+      }
+
+      .relative {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        background-color: lightcoral;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background-color: lightgreen;
+      }
+
+      .fixed-header {
+        position: fixed;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        background-color: #86da5f;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        z-index: 1000;
+      }
+      .sticky-div {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 40px;
+        background-color: rgb(251, 126, 68);
+        padding: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="fixed-header">Fixed Header</header>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nostrum,
+      repellendus ipsa itaque quam, repellat commodi hic quibusdam dolore vel
+      quaerat minima beatae. Molestiae at ullam modi. Possimus, ea soluta.
+    </p>
+    <div class="sticky-div">Sticky Div</div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      incidunt possimus optio molestias, maiores pariatur at dolore dolores qui
+      harum a doloribus cum itaque suscipit nostrum, nam illum deserunt nemo?
+    </p>
+    <div style="height: 100px"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, iste
+      excepturi? Ipsam asperiores neque eaque provident eveniet iure maiores
+      molestiae harum, at saepe. Aspernatur necessitatibus iure omnis, vero
+      labore enim!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nostrum,
+      repellendus ipsa itaque quam, repellat commodi hic quibusdam dolore vel
+      quaerat minima beatae. Molestiae at ullam modi. Possimus, ea soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      incidunt possimus optio molestias, maiores pariatur at dolore dolores qui
+      harum a doloribus cum itaque suscipit nostrum, nam illum deserunt nemo?
+    </p>
+    <div style="height: 500px"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, iste
+      excepturi? Ipsam asperiores neque eaque provident eveniet iure maiores
+      molestiae harum, at saepe. Aspernatur necessitatibus iure omnis, vero
+      labore enim!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nostrum,
+      repellendus ipsa itaque quam, repellat commodi hic quibusdam dolore vel
+      quaerat minima beatae. Molestiae at ullam modi. Possimus, ea soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      incidunt possimus optio molestias, maiores pariatur at dolore dolores qui
+      harum a doloribus cum itaque suscipit nostrum, nam illum deserunt nemo?
+    </p>
+    <div style="height: 100px"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, iste
+      excepturi? Ipsam asperiores neque eaque provident eveniet iure maiores
+      molestiae harum, at saepe. Aspernatur necessitatibus iure omnis, vero
+      labore enim!
+    </p>
+    <div class="container">
+      <div class="static">Static</div>
+      <div class="relative">Relative</div>
+      <div class="absolute">Absolute</div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      vehicula sem quis sapien tempor, et vestibulum velit congue. Integer quis
+      arcu quam. Sed nec libero sit amet libero rutrum feugiat. Proin eu mauris
+      vitae odio sodales cursus id sed dui. Vestibulum vehicula nisi quis erat
+      congue, at fermentum mauris luctus. In sed lorem id arcu consequat
+      molestie id ac libero. Phasellus mollis eros vitae ligula pharetra, et
+      fermentum tortor tempus. Aliquam erat volutpat. Nam vel dui sed nulla
+      lobortis accumsan. Fusce eu nisi quis nisi laoreet scelerisque.
+    </p>
+  </body>
+</html>

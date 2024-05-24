@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display and Box Sizing</title>
+    <style>
+      .block {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+
+      .inline {
+        display: inline;
+        width: auto;
+        height: auto;
+        border: 1px solid blue;
+      }
+
+      .inline-block {
+        display: inline-block;
+        border: 1px solid green;
+      }
+
+      .flex-container {
+        display: flex;
+        border: 1px solid red;
+        margin-top: 20px;
+        padding: 10px;
+      }
+
+      .box-border {
+        box-sizing: border-box;
+      }
+
+      .box-content {
+        box-sizing: content-box;
+      }
+
+      .mt {
+        margin-top: 50px;
+      }
+
+      .mb {
+        margin-bottom: 50px;
+      }
+
+      .pb {
+        padding-bottom: 50px;
+      }
+
+      .pt {
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block">Block</div>
+    <div class="inline">Inline</div>
+    <div class="inline-block">Inline Block</div>
+
+    <div class="flex-container">
+      <div class="block">Flex 1</div>
+      <div class="block">Flex 2</div>
+      <div class="block">Flex 3</div>
+    </div>
+
+    <div class="block box-border mt mb pb pt">Box Sizing: Border Box</div>
+    <div class="block box-content mt mb pb pt">Box Sizing: Content Box</div>
+  </body>
+</html>
