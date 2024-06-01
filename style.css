@@ -104,9 +104,6 @@
 .numbers ul {
   display: flex;
   justify-content: space-between;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 80px;
   width: 100%;
   flex-wrap: wrap;
   gap: 20px;
@@ -192,6 +189,11 @@
 @media only screen and (max-width: 500px) {
   .numbers {
     height: 500px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .numbers ul {
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 630px) {
