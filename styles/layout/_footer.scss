@@ -1,0 +1,20 @@
+@use "../base/variables" as *;
+.footer {
+  background-color: $background-color-2;
+  height: 151px;
+
+  &__title {
+    font-size: 21px;
+    font-family: $font-family-roboto;
+    font-weight: 80px;
+    color: $color-white;
+    padding-top: 50px;
+  }
+
+  &__description {
+    font-size: 13px;
+    font-family: $font-family-roboto;
+    color: $color-white;
+    padding-top: 20px;
+  }
+}

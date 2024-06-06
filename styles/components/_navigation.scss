@@ -1,0 +1,20 @@
+@use "../base/variables" as *;
+@use "../utils/mixins" as *;
+.first-screen__navigation {
+  padding-top: 79px;
+  ul {
+    @include flex-center(row, space-between);
+    gap: 45px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: $font-family-roboto;
+    color: $color-black;
+    font-weight: 480;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}

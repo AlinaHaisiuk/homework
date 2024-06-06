@@ -1,0 +1,5 @@
+@use "../base/variables" as *;
+@use "../utils/mixins" as *;
+button {
+  @include button-style($background-color-2, $color-white);
+}

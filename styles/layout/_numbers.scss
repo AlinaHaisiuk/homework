@@ -1,0 +1,33 @@
+@use "../base/variables" as *;
+@use "../utils/mixins" as *;
+.numbers {
+  height: 250px;
+  background-color: $background-color-2;
+  @include flex-center(row, space-between);
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  li {
+    display: flex;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      color: $color-white;
+    }
+  }
+  img {
+    margin-right: 20px;
+  }
+}
+.number-paragraph {
+  font-size: 21px;
+  font-family: $font-family-roboto;
+  font-weight: bold;
+}

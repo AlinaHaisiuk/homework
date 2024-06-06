@@ -1,0 +1,21 @@
+@use "../base/variables" as *;
+.first-screen {
+  height: 700px;
+  background-color: $background-color-1;
+
+  &__title {
+    font-size: 48px;
+    font-family: $font-family-roboto;
+    font-weight: bold;
+    padding-top: 162px;
+    color: $color-black;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-family: $font-family-roboto;
+    color: $color-gray;
+    padding-top: 60px;
+    line-height: 25px;
+  }
+}

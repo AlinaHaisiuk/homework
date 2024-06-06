@@ -1,0 +1,22 @@
+@use "../base/variables" as *;
+.about-me {
+  background-color: $background-color-3;
+  height: 360px;
+
+  &__title {
+    padding-top: 112px;
+    padding-bottom: 50px;
+    font-size: 32px;
+    font-family: $font-family-roboto;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-family: $font-family-roboto;
+    color: $color-gray;
+    text-align: center;
+    line-height: 25px;
+  }
+}

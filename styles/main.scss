@@ -1,0 +1,77 @@
+@use "base/reset";
+@use "base/variables";
+@use "utils/mixins";
+@use "utils/media-queries" as mx;
+
+@use "layout/container";
+@use "layout/first-screen";
+@use "layout/about-me";
+@use "layout/numbers";
+@use "layout/video";
+@use "layout/footer";
+
+@use "components/buttons";
+@use "components/navigation";
+
+/* Responsive styles */
+@include mx.respond-to("medium") {
+  .video {
+    height: 700px;
+  }
+}
+
+@include mx.respond-to("xsmall") {
+  .numbers {
+    height: 500px;
+  }
+}
+
+@include mx.respond-to("small") {
+  .first-screen__navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-screen__navigation {
+    padding-top: 20px;
+  }
+
+  .first-screen__title {
+    font-size: 30px;
+    padding-top: 40px;
+  }
+
+  .first-screen {
+    text-align: center;
+  }
+
+  .about-me {
+    height: 450px;
+  }
+
+  .text-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@include mx.respond-to("large") {
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .video-icon {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-container {
+    max-width: 100%;
+    height: auto;
+  }
+}

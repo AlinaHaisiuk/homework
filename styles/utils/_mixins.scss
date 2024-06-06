@@ -1,0 +1,22 @@
+@use "../base/variables" as *;
+@mixin button-style($bg-color, $text-color) {
+  background-color: $bg-color;
+  border: none;
+  color: $text-color;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: $font-family-roboto;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  margin-top: 65px;
+}
+
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
